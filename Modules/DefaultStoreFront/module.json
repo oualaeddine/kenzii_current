@@ -1,0 +1,13 @@
+{
+    "name": "DefaultStoreFront",
+    "alias": "DefaultStoreFront",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DefaultStoreFront\\Providers\\DefaultStoreFrontServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

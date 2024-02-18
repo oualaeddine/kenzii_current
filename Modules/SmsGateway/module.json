@@ -1,0 +1,13 @@
+{
+    "name": "SmsGateway",
+    "alias": "smsgateway",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SmsGateway\\Providers\\SmsGatewayServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

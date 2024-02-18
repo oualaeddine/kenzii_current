@@ -1,0 +1,13 @@
+{
+    "name": "CaisseEuro",
+    "alias": "caisseeuro",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CaisseEuro\\Providers\\CaisseEuroServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

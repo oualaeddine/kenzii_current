@@ -1,0 +1,13 @@
+{
+    "name": "Kenzii",
+    "alias": "kenzii",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Kenzii\\Providers\\KenziiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

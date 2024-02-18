@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Cambria';
+	src: url('../fonts/Cambria.eot');
+	src: url('../fonts/Cambria.eot?#iefix') format('embedded-opentype'),  url('../fonts/Cambria.woff2') format('woff2'),  url('../fonts/Cambria.woff') format('woff'),  url('../fonts/Cambria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: 'AdobeArabic-Regular';
+    src: url('../fonts/AdobeArabic-Regular.eot');
+    src: url('../fonts/AdobeArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AdobeArabic-Regular.woff2') format('woff2'),
+        url('../fonts/AdobeArabic-Regular.woff') format('woff'),
+        url('../fonts/AdobeArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Al-Jazeera-Arabic-Bold';
+	src: url('../fonts/Al-Jazeera-Arabic-Bold.eot');
+	src: url('../fonts/Al-Jazeera-Arabic-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Al-Jazeera-Arabic-Bold.woff2') format('woff2'),  url('../fonts/Al-Jazeera-Arabic-Bold.woff') format('woff'),  url('../fonts/Al-Jazeera-Arabic-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Al-Jazeera-Arabic-Regular';
+	src: url('../fonts/Aljazeera.eot');
+	src: url('../fonts/Aljazeera.eot?#iefix') format('embedded-opentype'),  url('../fonts/Aljazeera.woff2') format('woff2'),  url('../fonts/Aljazeera.woff') format('woff'),  url('../fonts/Aljazeera.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

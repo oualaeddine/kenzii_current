@@ -1,0 +1,113 @@
+/* Start Global Styles */
+* {
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+.has-shadow {
+    box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, .37);
+}
+
+.gray-color {
+    color: #8c8c8cfa;
+}
+
+.section {
+    margin-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.custom-tab .nav-link {
+    color: #6c757d;
+    border: none !important;
+    background: none !important;
+    position: relative;
+}
+
+.custom-tab .nav-link.active {
+    color: black;
+    font-weight: bold;
+}
+
+.custom-tab .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 3px;
+    background-color: #0d6efd;
+}
+/* Start Global Styles */
+
+/* Start Navbar */
+.navbar .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .navbar-brand img {
+    height: 24px;
+    width: auto;
+}
+/* End Navbar */
+
+/* Start Carousel */
+.carousel-indicators [data-bs-target] {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    border: none;
+    background: var(--bs-yellow);
+    opacity: .1;
+}
+
+.carousel .carousel-indicators button.active {
+    opacity: 1;
+}
+
+.carousel .carousel-inner img{
+    height: 280px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* End Carousel */
+
+/* Start Basic Information */
+.basic-info .price-text {
+    font-size: 13px;
+}
+
+.basic-info .old-price-section .price {
+    text-decoration-line: line-through;
+}
+/* Start Basic Information */
+
+/* Start Details Section */
+.details .tab-content .tab-pane {
+    padding-top: 16px;
+}
+/* End Details Section */
+
+/* Start Order Button */
+.float-order-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-top: 8px;
+    background-color: white;
+    box-shadow: 0px 2px 15px -3px rgb(0 0 0 / 37%);
+}
+/* End Order Button */
+
+/************************************************************************************************
+---------------------------------- Start Checkout Page ------------------------------------------
+************************************************************************************************/

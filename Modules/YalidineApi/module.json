@@ -1,0 +1,13 @@
+{
+  "name": "YalidineApi",
+  "alias": "yalidineapi",
+  "description": "",
+  "keywords": [],
+  "priority": 0,
+  "providers": [
+    "Modules\\YalidineApi\\Providers\\YalidineApiServiceProvider"
+  ],
+  "aliases": {},
+  "files": [],
+  "requires": []
+}

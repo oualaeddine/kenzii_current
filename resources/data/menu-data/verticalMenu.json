@@ -1,0 +1,609 @@
+{
+  "menu": [
+    {
+      "navheader": "Orders",
+      "slug": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/contact",
+      "name": "Contact",
+      "icon": "user-plus",
+      "slug": "contact",
+      "badgeClass": "badge badge-pill badge-light-danger ml-auto mr-1 contact-off",
+      "badge": "",
+      "roles": [
+        "admin",
+        "supervisor",
+        "operator"
+      ]
+    },
+    {
+      "url": "admin/visitors",
+      "name": "Visitors",
+      "icon": "shopping-cart",
+      "slug": "visitors",
+      "roles": [
+      
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders",
+      "name": "All orders",
+      "icon": "shopping-cart",
+      "slug": "orders",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/new",
+      "name": "New",
+      "icon": "plus",
+      "slug": "orders.new",
+      "badgeClass": "badge badge-pill badge-light-success ml-auto mr-1 new",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/na1",
+      "name": "No answer 1",
+      "icon": "phone-missed",
+      "slug": "na1",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 na1",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/na2",
+      "name": "No answer 2",
+      "icon": "phone-missed",
+      "slug": "na2",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 na2",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/pending_c",
+      "name": "Att confirmation",
+      "icon": "pause-circle",
+      "slug": "pending_c",
+      "badgeClass": "badge badge-pill badge-light-primary ml-auto mr-1 pending_c",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/AttConfNa1",
+      "name": "Att Conf No answer 1",
+      "icon": "phone-missed",
+      "slug": "AttConfNa1",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 AttConfNa1",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/AttConfNa2",
+      "name": "Att Conf No answer 2",
+      "icon": "phone-missed",
+      "slug": "AttConfNa2",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 AttConfNa2",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/confirmed1",
+      "name": "Confirmed 1",
+      "icon": "check",
+      "slug": "confirmed1",
+      "badgeClass": "badge badge-pill badge-light-success ml-auto mr-1 confirmed1",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/Conf1Na1",
+      "name": "Conf 1 No answer 1",
+      "icon": "phone-missed",
+      "slug": "Conf1Na1",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 Conf1Na1",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/Conf1Na2",
+      "name": "Conf 1 No answer 2",
+      "icon": "phone-missed",
+      "slug": "Conf1Na2",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 Conf1Na2",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/pending_s",
+      "name": "Att shipping",
+      "icon": "pause",
+      "slug": "pending_s",
+      "badgeClass": "badge badge-pill badge-light-secondary ml-auto mr-1 pending_s",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/AttShippNa1",
+      "name": "Att Shipp No answer 1",
+      "icon": "phone-missed",
+      "slug": "AttShippNa1",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 AttShippNa1",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/AttShippNa2",
+      "name": "Att Shipp No answer 2",
+      "icon": "phone-missed",
+      "slug": "AttShippNa2",
+      "badgeClass": "badge badge-pill badge-light-warning ml-auto mr-1 AttShippNa2",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/confirmed2",
+      "name": "Confirmed 2",
+      "icon": "check-circle",
+      "slug": "confirmed2",
+      "badgeClass": "badge badge-pill badge-light-success ml-auto mr-1 confirmed2",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor",
+        "packaging"
+      ]
+    },
+    {
+      "url": "admin/orders/en_p",
+      "name": "En préparation",
+      "icon": "package",
+      "slug": "en_p",
+      "badgeClass": "badge badge-pill badge-light-info ml-auto mr-1 en_p",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor",
+        "packaging"
+      ]
+    },
+    {
+      "url": "admin/orders/rs",
+      "name": "Ready to ship",
+      "icon": "package",
+      "slug": "rs",
+      "badgeClass": "badge badge-pill badge-light-info ml-auto mr-1 rs",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor",
+        "packaging"
+      ]
+    },
+    {
+      "navheader": "Yalidine",
+      "slug": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor",
+        "packaging"
+      ]
+    },
+    {
+      "url": "admin/orders/r_wilaya",
+      "name": "Reçu à Wilaya",
+      "icon": "home",
+      "slug": "r_wilaya",
+      "badgeClass": "badge badge-pill badge-light-info ml-auto mr-1 r_wilaya",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/sortie",
+      "name": "Sortie en livraison",
+      "icon": "phone-call",
+      "slug": "sortie",
+      "badgeClass": "badge badge-pill badge-primary ml-auto mr-1 sortie",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/alerte",
+      "name": "En alerte",
+      "icon": "alert-triangle",
+      "slug": "alerte",
+      "badgeClass": "badge badge-pill badge-warning ml-auto mr-1 alerte",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/t_echoue",
+      "name": "Tentative echouée",
+      "icon": "x-octagon",
+      "slug": "t_echoue",
+      "badgeClass": "badge badge-pill badge-danger ml-auto mr-1 t_echoue",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/att_c",
+      "name": "Att client",
+      "icon": "pause-circle",
+      "slug": "att_c",
+      "badgeClass": "badge badge-pill badge-light-info ml-auto mr-1 pending_c",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/attente",
+      "name": "En attente",
+      "icon": "pause",
+      "slug": "attente",
+      "badgeClass": "badge badge-pill badge-light-info ml-auto mr-1 pending",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/expedie",
+      "name": "Expédié",
+      "icon": "share",
+      "slug": "expedie",
+      "badgeClass": "badge badge-pill badge-light-secondary ml-auto mr-1 expedie",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor",
+        "packaging"
+      ]
+    },
+    {
+      "url": "admin/orders/v_wilaya",
+      "name": "Vers wilaya",
+      "icon": "truck",
+      "slug": "v_wilaya",
+      "badgeClass": "badge badge-pill badge-light-secondary ml-auto mr-1 v_wilaya",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/transfert",
+      "name": "Transfert",
+      "icon": "truck",
+      "slug": "transfert",
+      "badgeClass": "badge badge-pill badge-light-secondary ml-auto mr-1 transfert",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/centre",
+      "name": "Centre",
+      "icon": "home",
+      "slug": "centre",
+      "badgeClass": "badge badge-pill badge-light-secondary ml-auto mr-1 centre",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "navheader": "Finished orders",
+      "slug": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/delivered",
+      "name": "Livré",
+      "icon": "check-square",
+      "slug": "delivered",
+      "badgeClass": "badge badge-pill badge-light-success ml-auto mr-1 delivered",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/echec",
+      "name": "Echec livraison ",
+      "icon": "x-square",
+      "slug": "echec",
+      "badgeClass": "badge badge-pill badge-light-danger ml-auto mr-1 echec",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/orders/canceled",
+      "name": "Canceled",
+      "icon": "x-circle",
+      "slug": "canceled",
+      "badgeClass": "badge badge-pill badge-light-danger ml-auto mr-1 canceled",
+      "badge": "",
+      "roles": [
+        "operator",
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "navheader": "Plateform",
+      "slug": "",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/products",
+      "name": "Products",
+      "icon": "x-circle",
+      "slug": "products",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/categories",
+      "name": "Categories",
+      "icon": "list",
+      "slug": "categories",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+
+    {
+      "url": "admin/brands",
+      "name": "Brands",
+      "icon": "star",
+      "slug": "brands",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+
+
+   
+    {
+      "url": "admin/bon_achats",
+      "name": "Bons d'achat",
+      "icon": "book",
+      "slug": "bons",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/caisse",
+      "name": "Caisse",
+      "icon": "shopping-cart",
+      "slug": "shopping-cart",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },    {
+      "url": "admin/caisseeuro",
+      "name": "Caisse euro",
+      "icon": "shopping-cart",
+      "slug": "shopping-cart",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/stores",
+      "name": "Stores",
+      "icon": "shopping-bag",
+      "slug": "stores",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/charges",
+      "name": "Charges",
+      "icon": "clipboard",
+      "slug": "charges",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/users",
+      "name": "Users",
+      "icon": "users",
+      "slug": "users",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "name": "Acl",
+      "icon": "key",
+      "slug": "ACL",
+      "roles": [
+        "admin",
+        "supervisor"
+      ],
+      "submenu": [
+        {
+          "url": "admin/roles/index",
+          "name": "roles",
+          "icon": "key",
+          "slug": "roles"
+        },
+        {
+          "url": "admin/permissions/index",
+          "name": "permissions",
+          "icon": "key",
+          "slug": "permissions"
+        }
+      ]
+    },
+    {
+      "url": "admin/statistics",
+      "name": "Statistiques",
+      "icon": "trending-up",
+      "slug": "statistics",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/payments",
+      "name": "Payments",
+      "icon": "dollar-sign",
+      "slug": "payments",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/sms_settings",
+      "name": "Sms Setting",
+      "icon": "settings",
+      "slug": "smssettings",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/smsgateway",
+      "name": "Sms History",
+      "icon": "clock",
+      "slug": "smsgateway",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    },
+    {
+      "url": "admin/settings",
+      "name": "Settings",
+      "icon": "settings",
+      "slug": "settings",
+      "roles": [
+        "admin",
+        "supervisor"
+      ]
+    }
+  ]
+}

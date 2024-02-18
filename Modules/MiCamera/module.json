@@ -1,0 +1,13 @@
+{
+    "name": "MiCamera",
+    "alias": "micamera",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MiCamera\\Providers\\MiCameraServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

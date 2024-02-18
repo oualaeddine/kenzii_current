@@ -1,0 +1,13 @@
+{
+    "name": "DentaireStore",
+    "alias": "dentairestore",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DentaireStore\\Providers\\DentaireStoreServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

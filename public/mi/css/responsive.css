@@ -1,0 +1,127 @@
+/*
+   Olio Theme Responsive Design
+*/
+
+@media (max-width: 1200px) {
+    .arrow{ left: 187px; }
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .sm-padding{ padding: 15px; }
+    ul.nav > li > a {
+        padding: 0 5px;
+        font-size: 11px;
+    }
+    .hero-section {
+        height: auto;
+        padding: 60px 0;
+    }
+    .mainmenu .default-btn {
+        padding: 10px 15px;
+        position: sticky;
+        /* margin-left: 10px; */
+    }
+    .content-details h2 br,
+    .hero-content h1 br,
+    .hero-content p br{
+        display: none;
+    }
+    .content-details h2,
+    .hero-content h1{
+        font-size: 36px;
+    }
+    .arrow,
+    .feature-content li:before,
+    .feature-content li:after,
+    .feature-cam{ display: none; }
+    .feature-right .center,
+    .feature-left .center{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 30px!important;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .mock-hide,
+    p br{
+        display: none;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .xs-padding{
+    	padding: 15px;
+    }
+    .navbar-brand{
+        padding: 11px 0;
+        z-index: 10;
+        width: 60%;
+    }
+    .mainmenu .default-btn {
+        margin-left: 0;
+        
+        z-index: 1;
+    }
+    .menu-btn,
+    .menu-wrap ul.nav{
+        display: none;
+    }
+    .slicknav_menu {
+        display:block;
+    }
+    .hero-section{
+        text-align: center;
+    }
+    .hero-cam{
+        margin-top: 60px;
+    }
+    .cta-content,
+    .cta-content .text-right{ text-align: center!important; }
+    
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 576px CSS ---- */
+@media all and (max-width: 576px) {
+    
+}
+/* ---- End of max-width 576px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+    
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+	
+}
+/* ---- End of max-width 380px CSS ---- */

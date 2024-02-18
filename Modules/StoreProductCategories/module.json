@@ -1,0 +1,13 @@
+{
+    "name": "StoreProductCategories",
+    "alias": "storeproductcategories",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\StoreProductCategories\\Providers\\StoreProductCategoriesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

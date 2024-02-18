@@ -1,0 +1,13 @@
+{
+    "name": "BarbarosTools",
+    "alias": "barbarostools",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\BarbarosTools\\Providers\\BarbarosToolsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

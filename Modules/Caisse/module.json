@@ -1,0 +1,13 @@
+{
+    "name": "Caisse",
+    "alias": "caisse",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Caisse\\Providers\\CaisseServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

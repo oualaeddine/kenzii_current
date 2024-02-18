@@ -1,0 +1,13 @@
+{
+    "name": "OldStoreFront",
+    "alias": "OldStoreFront",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\OldStoreFront\\Providers\\OldStoreFrontServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
