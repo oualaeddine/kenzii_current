@@ -133,6 +133,7 @@ class KenziiController extends Controller
             $product_id = 5;
             $ref = "ipl_pink";
         }
+        OrderStatus::dispatch($order);
 
 
         $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', $product_id)->first();

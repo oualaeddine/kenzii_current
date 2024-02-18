@@ -3,6 +3,7 @@
 
 namespace App\Helpers;
 
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Support\Facades\Http;
 use Modules\Orders\Entities\Order;
@@ -38,52 +39,53 @@ class SmsHelper
 
         $get_sms = Sms_setting::where('is_active',true)->where('status',$status)->first();
 
-
         if($get_sms != null){
-            
+
             $text = str_replace("{{order}}",$order->id,$get_sms->text);
+            $text = str_replace("{{product}}", $order->orderProducts[0]->product->name, $text);
+
 
             $sms = $text.".\n" . $order->store->fb;
         }else{
 
             return false;
-            
+
         }
-    
 
-     /*    switch ($status) {
-            case "new":
-                $sms = "تم استلام طلبك رقم $order->id سنتصل بك للتأكيد.\n" . $order->store->fb;
-                break;
-            case "na2":
-            case "na1":
-                $sms = "يرجى الرد على الهاتف لتأكيد طلبك رقم $order->id \n" . $order->store->fb;
-                break;
-            case "canceled":
-                $sms = "تم إلغاء طلبك رقم $order->id \n" . $order->store->fb;
-                break;
-            case "confirmed1":
-                $sms = "تم تأكيد طلبك رقم $order->id \n" . $order->store->fb;
-                break;
-            case "Expédié":
-                $sms = "تم ارسال طلبك رقم $order->id \n" . $order->store->fb;
-                break;
-            case "Reçu à Wilaya":
-                $sms = "وصل طلبك  رقم $order->id إلى ولايتك \n" . $order->store->fb;
-                break;
-            case "Sorti en livraison":
-                $sms = "عامل التسلم في طريقه لتسليم الطرد الخاص بك \n" . $order->store->fb;
-                break;
-            case "Echèc livraison":
-                $sms = "لقد فشلت عملية تسليم طلبك رقم $order->id \n" . $order->store->fb;
-                break;
-            case "Livré":
-                $sms = "لقد تم تسليم طلبك رقم $order->id \n" . $order->store->fb;
-                break;
 
-                default :return false;
+        /*    switch ($status) {
+               case "new":
+                   $sms = "تم استلام طلبك رقم $order->id سنتصل بك للتأكيد.\n" . $order->store->fb;
+                   break;
+               case "na2":
+               case "na1":
+                   $sms = "يرجى الرد على الهاتف لتأكيد طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
+               case "canceled":
+                   $sms = "تم إلغاء طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
+               case "confirmed1":
+                   $sms = "تم تأكيد طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
+               case "Expédié":
+                   $sms = "تم ارسال طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
+               case "Reçu à Wilaya":
+                   $sms = "وصل طلبك  رقم $order->id إلى ولايتك \n" . $order->store->fb;
+                   break;
+               case "Sorti en livraison":
+                   $sms = "عامل التسلم في طريقه لتسليم الطرد الخاص بك \n" . $order->store->fb;
+                   break;
+               case "Echèc livraison":
+                   $sms = "لقد فشلت عملية تسليم طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
+               case "Livré":
+                   $sms = "لقد تم تسليم طلبك رقم $order->id \n" . $order->store->fb;
+                   break;
 
-        } */
+                   default :return false;
+
+           } */
 
         return self::saveSms($sms, $order->phone, $order->id);
     }
@@ -95,7 +97,8 @@ class SmsHelper
             $mySms->sms = $sms;
             $mySms->phone = $num;
             $mySms->order_id = $order_id;
-            $mySms->save();
+            $sms = (new MySms)->setConnection('old_cnct')->create($mySms->toArray());
+
         }else{
 
             $count = floor(strlen($sms) / 159) + 1;
@@ -109,12 +112,18 @@ class SmsHelper
                 $mySms->sms = $part;
                 $mySms->phone = $num;
                 $mySms->order_id = $order_id;
-                $mySms->save();
+                $sms = (new MySms)->setConnection('old_cnct')->create($mySms->toArray());
 
             }
 
         }
-     
+
+        //   $sms=    DB::connection('old_cnct')->table('my_sms')    ->insert($mySms->toArray());
+
+        // $sms = (new MySms)->setConnection('old_cnct')->create($mySms->toArray());
+        //$sms->save();
+        //   dd($sms);
+
         return true;
     }
 
