@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-3 col-md-12 text-center" >
                         <label for="phone" class="form-label">رقم الهاتف <span class="text-danger"> * </span></label>
-                        <input name="phone" type="number" onKeyPress="if(this.value.length==10) return false;" class="form-control form-control-lg" required id="phone">
+                        <input name="phone" type="tel" onKeyPress="if(this.value.length==10) return false;" class="form-control form-control-lg" required id="phone">
                     </div>
                     <div class="mb-3 col-md-12 text-center">
                         <label for="state" class="form-label">الولاية <span class="text-danger"> * </span></label>
