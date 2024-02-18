@@ -117,7 +117,7 @@ class KenziiController extends Controller
         $order->name = $request->firstname;
         $order->phone = $request->phone;
         $order->wilaya = $request->state;
-        $order->comments = 'The Picked color is : ' . $request->color;
+        //$order->comments = 'The Picked color is : ' . $request->color;
         $order->store_id = $request->store;
         $order->last_status = 'new';
         $order->visitor_id = $visitor_id;
