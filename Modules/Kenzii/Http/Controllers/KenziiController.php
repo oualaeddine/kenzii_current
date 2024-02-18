@@ -45,7 +45,7 @@ class KenziiController extends Controller
 
     public function product(Request $request)
     {
-        $store_product = StoreProduct::findorFail(1);
+        $store_product = StoreProduct::findorFail(8);
 
         $visitor_id = VisitorLogHelper::StoreVisitor($request, $store_product);
         Session::put('visitor_id', $visitor_id);
@@ -57,7 +57,7 @@ class KenziiController extends Controller
     public function checkout(Request $request)
     {
 
-        $product = Product::findorFail(1);
+        $product = Product::findorFail(8);
 
         $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', 5)->first();
 
@@ -123,10 +123,10 @@ class KenziiController extends Controller
 
 
         if ($request->color == 'White') {
-            $product_id = 1;
+            $product_id = 5;
             $ref = "ipl_white";
         } else {
-            $product_id = 2;
+            $product_id = 5;
             $ref = "ipl_pink";
         }
 
