@@ -35,7 +35,6 @@ class SmsHelper
     public static function sendChangeStatusSms(Order $order)
     {
         $status = $order->last_status;
-        dd($order);
         $sms = "";
 
         $get_sms = Sms_setting::where('is_active',true)->where('status',$status)->first();

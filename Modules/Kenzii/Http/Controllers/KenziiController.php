@@ -147,6 +147,8 @@ class KenziiController extends Controller
         $order_product->order_id = $order->id;
         $order_product->save();
 
+        dd($order);
+
 
         OrderStatus::dispatch($order);
         /*
