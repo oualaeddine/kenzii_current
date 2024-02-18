@@ -45,7 +45,7 @@ class KenziiController extends Controller
 
     public function product(Request $request)
     {
-        $store_product = StoreProduct::findorFail(8);
+        $store_product = StoreProduct::findorFail(5);
 
         $visitor_id = VisitorLogHelper::StoreVisitor($request, $store_product);
         Session::put('visitor_id', $visitor_id);
@@ -57,19 +57,23 @@ class KenziiController extends Controller
     public function checkout(Request $request)
     {
 
-        $product = Product::findorFail(8);
+        $product = Product::findorFail(5);
 
-        $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', 5)->first();
+        $price_info = DB::table('store_products')
+            ->where('store_id', $request->store)
+            ->where('product_id', $product->id)->first();
 
         $color = 'White';
 
-      /*   if ($request->product != null) {
-            $color = $request->product;
-        } */
+        /*   if ($request->product != null) {
+              $color = $request->product;
+          } */
 
 
         $page_title = 'Kenzii | checkout';
-        return view('kenzii::checkout', compact('page_title', 'color', 'price_info', 'product'))->with('fb_pixel', $this->fbPixel($request->store));;
+        return view('kenzii::checkout',
+            compact('page_title', 'color', 'price_info', 'product'))
+            ->with('fb_pixel', $this->fbPixel($request->store));;
     }
 
 
@@ -142,16 +146,16 @@ class KenziiController extends Controller
         $order_product->order_id = $order->id;
         $order_product->save();
 
-        
+
         OrderStatus::dispatch($order);
-/*
-        $visitor = Visitor::find($visitor_id);
+        /*
+                $visitor = Visitor::find($visitor_id);
 
-        $src = $visitor->host . " | " . $visitor->tsrc;
+                $src = $visitor->host . " | " . $visitor->tsrc;
 
-        $price = $order_product->price;
+                $price = $order_product->price;
 
-        SendToEcoManager::sendToEcoManager($order->name, $order->phone, $order->wilaya, $ref, $src, $price);*/
+                SendToEcoManager::sendToEcoManager($order->name, $order->phone, $order->wilaya, $ref, $src, $price);*/
 
         $page_title = 'Kenzii | Thank you';
 
@@ -170,7 +174,7 @@ class KenziiController extends Controller
     }
 
 
-    public function faq(Request  $request)
+    public function faq(Request $request)
     {
 
         $page_title = 'Kenzii | FAQ';
