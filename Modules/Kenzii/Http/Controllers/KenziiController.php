@@ -45,7 +45,7 @@ class KenziiController extends Controller
 
     public function product(Request $request)
     {
-        $store_product = StoreProduct::findorFail(5);
+        $store_product = StoreProduct::findorFail(8);
 
         $visitor_id = VisitorLogHelper::StoreVisitor($request, $store_product);
         Session::put('visitor_id', $visitor_id);
