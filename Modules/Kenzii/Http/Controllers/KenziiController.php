@@ -127,12 +127,12 @@ class KenziiController extends Controller
 
 
 
+        $product_id = 5;
 
         $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', $product_id)->first();
 
         /*  $this->push_notif($request, $order->id, $store->name); */
 
-        $product_id = 5;
 
         $order_product = new OrderProduct();
         $order_product->product_id = $product_id;
