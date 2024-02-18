@@ -4,8 +4,8 @@
 
 <section class="section mt-3 text-right" dir="rtl">
     <div class="container-fluid">
-        <h2 class="fw-bold">{{$product->name}} {{--- {{$color}}--}}</h2>
-        <h2 class="price text-danger fw-bold mb-0 mt-2">{{$price_info->price}} دج</h2>
+        <h2 class="fw-bold align-center">{{$product->name}} {{--- {{$color}}--}}</h2>
+        <h2 class="price text-danger fw-bold mb-0 mt-2 align-center">{{$price_info->price}} دج</h2>
         {{-- <h2 class="price text-danger fw-bold mb-0 mt-2">{{$price_info->price}} دج</h2> --}}
     </div>
 </section>
