@@ -126,19 +126,13 @@ class KenziiController extends Controller
         $store = Store::find($order->store_id);
 
 
-        if ($request->color == 'White') {
-            $product_id = 5;
-            $ref = "ipl_white";
-        } else {
-            $product_id = 5;
-            $ref = "ipl_pink";
-        }
-        OrderStatus::dispatch($order);
 
 
         $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', $product_id)->first();
 
         /*  $this->push_notif($request, $order->id, $store->name); */
+
+        $product_id = 5;
 
         $order_product = new OrderProduct();
         $order_product->product_id = $product_id;
@@ -146,8 +140,6 @@ class KenziiController extends Controller
         $order_product->price = $price_info->price;
         $order_product->order_id = $order->id;
         $order_product->save();
-
-        dd($order);
 
 
         OrderStatus::dispatch($order);
