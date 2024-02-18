@@ -59,7 +59,7 @@ class KenziiController extends Controller
 
         $product = Product::findorFail(1);
 
-        $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', 1)->first();
+        $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', 5)->first();
 
         $color = 'White';
 
