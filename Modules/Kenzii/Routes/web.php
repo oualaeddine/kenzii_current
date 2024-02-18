@@ -11,14 +11,16 @@
 |
 */
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Modules\Stores\Entities\Store;
 
 
 $host = request()->getHttpHost();
 $host = str_replace("www.", "", $host);
-if ($host == 'kenzii.me' || $host == "www.kenzii.me" || $host == 'order-kenzii.shop' || $host == "www.order-kenzii.shop") {
+if (
+    $host == 'kenzii.me' || $host == "www.kenzii.me" || $host == 'order-kenzii.shop' || $host == "www.order-kenzii.shop" ||
+    $host == 'lasoft.pro' || $host == "www.lasoft.pro"
+
+) {
     Route::middleware('hsd')->group(function () {
 
         Route::get('/check', 'KenziiController@checking')->name('kenzii.checking');

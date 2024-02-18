@@ -18,7 +18,7 @@ class HostNameDetectorMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Config::get('app.url') != 'http://127.0.0.1:8000/'){
+        if(Config::get('app.url') !== 'http://127.0.0.1:8000/'){
                     
             $host = $request->getHttpHost();
 

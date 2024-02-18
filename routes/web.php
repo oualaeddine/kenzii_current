@@ -34,7 +34,11 @@ Route::name('store.')->group(function () {
         Route::get('/', function (Request $request) {
             $host = $request->getHttpHost();
             $host = str_replace("www.", "", $host);
-            if ($host == 'kenzii.me' || $host == "www.kenzii.me") {
+            if (
+                $host == 'kenzii.me' || $host == "www.kenzii.me" ||
+                $host == 'lasoft.pro' || $host == "www.lasoft.pro"
+
+            ) {
                 return App::call('Modules\Kenzii\Http\Controllers\KenziiController@index');
             }
 
@@ -50,7 +54,7 @@ Route::name('store.')->group(function () {
                 return App::call('Modules\BarbarosTools\Http\Controllers\BarbarosToolsController@index');
             }
 
-            return App::call('Modules\OldStoreFront\Http\Controllers\HomeController@index');
+            return App::call('Modules\Kenzii\Http\Controllers\KenziiController@index');
         })->name('home');
     });
 });
