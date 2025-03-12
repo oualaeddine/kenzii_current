@@ -9,6 +9,8 @@ use App\Models\Visitor;
 use App\Traits\FcmSend;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Modules\OldStoreFront\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -126,7 +128,6 @@ class KenziiController extends Controller
         $store = Store::find($order->store_id);
 
 
-
         $product_id = 5;
 
         $price_info = DB::table('store_products')->where('store_id', $request->store)->where('product_id', $product_id)->first();
@@ -156,8 +157,74 @@ class KenziiController extends Controller
 
         Session::forget('visitor_id');
 
+        $this->storeOrder($order);
+
         return view('kenzii::thankyou', compact('page_title'))->with('fb_pixel', $this->fbPixel($request->store));;
     }
+
+
+    public function storeOrder($order)
+    {
+        $products = [];
+        $total = 0;
+        foreach ($order->orderProducts as $product) {
+            $products [] =
+                [
+                    'name' => $product->product->name,
+                    'sku' => "LASOFT" . $product->product_id,
+                    'quantity' => $product->quantity,
+                    'price' => $product->price
+                ];
+
+            $total += $product->price;
+        }
+
+
+        $data = [
+            //  'client_id' => 1,
+            'store_id' => 2,
+            //    'status_id' => 3,
+            // 'shipping_channel_id' => 4,
+            'full_name' => $order->name,
+            'phone' => $order->name,
+            'order_date' => $order->created_at,
+            'total_amount' => $total,
+            'comments' => $order->comments,
+            'address' => $order->wilaya,
+            //'city_id' => 5,
+            'products' => $products
+        ];
+
+        // Start the asynchronous request
+        $response = Http::async()->post('https://app.kseltechnology.com/api/v1/webhook/orders', $data);
+
+        // Perform other tasks without waiting for the HTTP request to complete
+        // For example, save data locally or process other things
+
+        // Handle the response when the request is finished
+        $response->then(function ($response) {
+            // Log the response data
+            $statusCode = $response->status(); // HTTP status code
+            $responseData = $response->json(); // Get the response data as an array
+
+            // Log the response status and data
+            Log::info('Asynchronous request completed', [
+                'status' => $statusCode,
+                'response_data' => $responseData
+            ]);
+
+            // You can also check the status code to log different messages based on the result
+            if ($statusCode === 200) {
+                Log::info('Order successfully processed', $responseData);
+            } else {
+                Log::error('Order processing failed', $responseData);
+            }
+        });
+
+        /* // Optionally, return a response immediately while the request is still processing
+         return response()->json(['message' => 'Order is being processed']);*/
+    }
+
 
     /**
      * Show the form for creating a new resource.
