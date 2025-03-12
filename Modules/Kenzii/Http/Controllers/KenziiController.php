@@ -205,7 +205,7 @@ class KenziiController extends Controller
         // For example, save data locally or process other things
 
         // Handle the response when the request is finished
-        $response->then(function ($response) {
+   /*     $response->then(function ($response) {
             // Log the response data
             $statusCode = $response->status(); // HTTP status code
             $responseData = $response->json(); // Get the response data as an array
@@ -222,7 +222,7 @@ class KenziiController extends Controller
             } else {
                 Log::error('Order processing failed', $responseData);
             }
-        });
+        });*/
 
         /* // Optionally, return a response immediately while the request is still processing
          return response()->json(['message' => 'Order is being processed']);*/
