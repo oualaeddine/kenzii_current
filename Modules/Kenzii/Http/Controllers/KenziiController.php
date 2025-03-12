@@ -156,6 +156,7 @@ class KenziiController extends Controller
         $page_title = 'LaSoft Pro | Thank you';
 
         Session::forget('visitor_id');
+        Log::info(' $this->storeOrder($order)');
 
         $this->storeOrder($order);
 
@@ -165,6 +166,8 @@ class KenziiController extends Controller
 
     public function storeOrder($order)
     {
+
+        Log::info('Asynchronous request storeOrder');
         $products = [];
         $total = 0;
         foreach ($order->orderProducts as $product) {
