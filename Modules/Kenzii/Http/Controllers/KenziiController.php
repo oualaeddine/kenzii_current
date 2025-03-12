@@ -199,7 +199,7 @@ class KenziiController extends Controller
         ];
 
         // Start the asynchronous request
-        $response = Http::async()->post('https://app.kseltechnology.com/api/v1/webhook/orders', $data);
+        $response = Http::post('https://app.kseltechnology.com/api/v1/webhook/orders', $data);
 
         // Perform other tasks without waiting for the HTTP request to complete
         // For example, save data locally or process other things
