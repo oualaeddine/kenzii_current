@@ -15,7 +15,7 @@
         	<div class="col-xl-11">
         		<div class="row">
                 	<div class="col-md-4 my-auto d-block d-md-none">
-                        <div class="logo"><a href="{{route('store.home')}}">kenzii</a></div>
+                        <div class="logo"><a href="{{route('store.home')}}">LASOFT</a></div>
                         <div class="device-nav" id="nav-icon"> 
                             <span class="fa fa-bars icon"></span>
                         </div>
@@ -27,14 +27,14 @@
                                     <ul>
                                         <li><a href="{{route('kenzii.faq')}}">الاسئلة الشائعة</a></li>
                                         <li><a href="{{route('kenzii.rating')}}">تقييم الزبائن</a></li>
-                                        <li class="d-block d-md-none "><a href="{{route('kenzii.checking')}}" class="buy-now">هل جهازي كــينزي أصلي ؟</a></li>
+                                        <li class="d-block d-md-none "><a href="{{route('kenzii.checking')}}" class="buy-now">هل جهازي لاسوفت أصلي ؟</a></li>
                                     </ul>   
                                 </nav>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 d-none d-md-block my-auto">
-                        <div class="logo"><a href="{{route('store.home')}}">kenzii</a></div>
+                        <div class="logo"><a href="{{route('store.home')}}">LASOFT</a></div>
                     </div>
                     <div class="col-md-4 d-none d-md-block my-auto">
                     	<a href="{{route('kenzii.checking')}}" class="buy-now">هل جهازي أصلي ؟</a>

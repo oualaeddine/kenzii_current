@@ -6,9 +6,9 @@
     <section class="section-five">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>نتائج <span class="pink">كينزي الأصلي</span></h2>
-                </div>
+               	<div class="col-md-12">
+            	<h2>نتائج <span class="pink">لاسوفت برو الأصلي</span></h2>
+            </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-6">
@@ -46,8 +46,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>تعليقات الزبائن عن <span class="pink">كينزي الأصلي</span></h2>
-                </div>
+            <h2>تعليقات الزبائن عن <span class="pink">لاسوفت الأصلي</span></h2>
+            </div>
             </div>
             <div class="row">
                 <div class="col-md-4">

@@ -7,9 +7,10 @@
     <div class="container-fluid h-100">
         <div class="row justify-content-end h-100">
         	<div class="col-md-8 my-auto">
-            	<h2>هل جهازي كــينزي أصلي ؟</h2>
-            	<p>
-                	للتأكد من أن جهازك كيـنزي أصلي قومي بإدخال الرقم التسلسلي للجهاز الموجود اسفل العلبة
+        	<h2>هل جهازي لاسوفت أصلي ؟</h2>
+	
+	            <p>
+                	للتأكد من أن جهازك لاسوفت برو أصلي قومي بإدخال الرقم التسلسلي للجهاز الموجود اسفل العلبة
                 </p>
             </div>
         </div>
@@ -19,13 +20,10 @@
     <div class="container">
         <div class="row justify-content-center">
         	<div class="col-md-12 text-center">
-                <h2>حذاري من المواقع الاحتيالية</h2>
-                <h2>الموقع www.kenzii.me </h2>
-            <h2>هو الموقع الرسمي والوحيد لعلامة كينزي مثل ما هو مكتوب في العلبة</h2>
-            	                <h2>حذاري حذاري من شراء الجهاز المقلد</h2>
+                               <h2>يرجى إدخال الرقم التسلسلي هنا</h2>
 
             	<!-- <form > -->
-                	<input id="productCode" type="text" placeholder="-kenzii" class="serial-number" />
+                	<input id="productCode" type="text" placeholder="-LS" class="serial-number" />
                     <button class="stay-tuned-for-more" onclick="check();" type="button">اضغط هنا للتحقق</button>
                 <!-- </form> -->
             </div>

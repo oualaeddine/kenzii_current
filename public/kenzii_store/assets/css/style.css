@@ -333,13 +333,13 @@ a.order-now{
 .hero-section{
 	position:relative;
 	padding:150px 0px;
-	background:url(../images/Haut-Quality%201.png) center center no-repeat;
+	background:url(../images/a.png) center center no-repeat;
 	background-size:cover;
 	height:100vh;
 	max-height:858px;
 }
 .hero-section h1{
-	color:#FFFFFF;
+	color:#d87f93;
 	font-size:100px;
 	font-weight:700;
 	margin:0px 0px 10px 0px;
@@ -1166,7 +1166,7 @@ a.order-now{
 /*** ### Shipwreck Section ### ***/
 .shipwreck-section{
 	position:relative;
-	background:url(../images/part%201.png) right center no-repeat, #d87f93;
+	background: right center no-repeat, #d87f93;
 	background-size:contain;
 	padding:50px 0px;
 	height:100vh;
@@ -1392,7 +1392,7 @@ a.order-now{
 .top-footer{
 	position:relative;
 	padding:75px 0px;
-	background:url(../images/Calque%2036.png) left center no-repeat, #d87f93;
+	background: left center no-repeat, #d87f93;
 	background-size:480px;
 }
 .top-footer p{

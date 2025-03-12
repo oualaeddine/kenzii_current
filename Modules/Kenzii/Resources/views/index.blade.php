@@ -2,8 +2,7 @@
 
 @section('content')
 
-
-
+<meta name="facebook-domain-verification" content="jn0slyr6at2eg5d3o1urqfa8sd8m4v" />
 <section class="hero-section">
     <div class="container">
         <div class="row justify-content-end">
@@ -21,8 +20,9 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2><span class="pink">كينـزي الأصلي</span> يزيل الشعر الزائد نهائيا و بدون ألم!</h2>
-            </div>
+        	            <h2><span class="pink">لاسوفت الأصلي</span> يزيل الشعر الزائد نهائيا و بدون ألم!</h2>
+
+        	</div>
         </div>
     </div>
     <div class="container-fluid iner">
@@ -30,8 +30,8 @@
             <div class="row">
                 <div class="col-md-7">
                 	<div class="box-left">
-                    	<h3>جهاز الليزر <span class="pink">كينـزي الأصلي</span> لإزالة الشعر نهائيا</h3>
-                        <div class="row">
+                	                      <h3>جهاز الليزر <span class="pink">لاسوفت الأصلي</span> لإزالة الشعر نهائيا</h3>
+                	<div class="row">
                             <div class="col-md-5 d-block d-md-none">
                                 <div class="box-right">
                                  {{--    <img src="{{asset('kenzii_store/assets/images/pink.png')}}" class="img-fluid pink-image active" alt="" /> --}}
@@ -98,7 +98,7 @@
                         <h3>هل سئمتي من جلسات الليزر المكلفة للمال والوقت ؟</h3>
                     	<ul>
                         	<li>
-                                مع جهاز <span class="pink">كـينزي الأصلي</span> إزالة الشعر بالليزر
+                                مع جهاز <span class="pink">لاسوفت برو الأصلي</span> إزالة الشعر بالليزر
                                  أصبحت ممكنة و سهلة في المنزل.
                              </li>
                              <li>
@@ -133,7 +133,7 @@
                     <h2>مناسب لجميع مناطق الجسم</h2>
                     <p>
                         بإمكانك استعمال جهاز لـيزر<br /> 
-                        <span class="pink">كينــزي الأصلي</span> على جميـع<br /> 
+                        <span class="pink">لاسوفت الأصلي</span> على جميـع<br /> 
                         مناطق الجسم حتى الوجه<br />
                         و المنطقة الحساسة.
                     </p>
@@ -186,7 +186,7 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2>نتائج <span class="pink">كينزي الأصلي</span></h2>
+            	<h2>نتائج <span class="pink">لاسوفت برو الأصلي</span></h2>
             </div>
         </div>
         <div class="row">
@@ -225,13 +225,12 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2>تعليقات الزبائن عن <span class="pink">كينزي الأصلي</span></h2>
+            <h2>تعليقات الزبائن عن <span class="pink">لاسوفت الأصلي</span></h2>
             </div>
         </div>
         <div class="row">
         	<div class="col-md-4">
             	<div class="boxes">
-                	<img src="{{asset('kenzii_store/assets/images/Calque 50 copie.png')}}" class="img-fluid" alt="" />
                 	<img src="{{asset('kenzii_store/assets/images/Calque 50 copie.png')}}" class="img-fluid" alt="" />
                 </div>
             </div>
@@ -262,14 +261,12 @@
         	<div class="col-md-8">
             	<p>
                 	اذا كان لديك أي إستفسار أو تريدين التحدث <br /> مع إحدى أخصائياتنا يمكنك الاتصال بنا <br /> 
-                    على الهاتف: <a href="tel:0770146313" class="black">0770146313</a><br />
-                    على الواتس:  <a href="tel:0770686417" class="black">0770686417</a>
+                    على الهاتف: <a href="tel:0770867532" class="black">0770867532</a><br />
+                    على الواتس:  <a href="tel:0770345478" class="black">0770345478</a>
                 </p>
             </div>
             <div class="col-md-4 d-block d-md-none">
-            	<div class="images-box">
-                	<img src="{{asset('kenzii_store/assets/images/Calque 36-mobile.png')}}" class="img-fluid" alt="" />
-                </div>
+            	
             </div>
         </div>
     </div>

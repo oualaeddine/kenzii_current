@@ -10,7 +10,7 @@
                         <li><a href="#">اتصل بنا</a></li>
                     </ul>
                 </div>
-                <p>kenzii</p>
+                <p>LASOFT PRO</p>
             </div>
         </div>
     </div>

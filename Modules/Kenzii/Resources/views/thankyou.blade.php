@@ -19,4 +19,12 @@
     <script>
         fbq('track', 'Purchase', {currency: "DZD", value: 2400.00});
     </script>
+    <!-- Event snippet for Purchase conversion page -->
+<script>
+  gtag('Purchase', 'conversion', {
+      'send_to': 'AW-847547669/qTfDCJq8lqAZEJWakpQD',
+      'transaction_id': ''
+  });
+</script>
+
 @endsection

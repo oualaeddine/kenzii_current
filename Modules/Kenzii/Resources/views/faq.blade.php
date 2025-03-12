@@ -16,7 +16,7 @@
             <div class="card-header"  style="background-color:#f5eaec" id="headingone">
               <div class="row">
                 <div class="col-sm-10">
-              <h6 class="mb-0" ><span class=""> كيف يعمل جهاز Kenzii ؟</span></h6>
+              <h6 class="mb-0" ><span class=""> كيف يعمل جهاز LaSoft PRO ؟</span></h6>
                </div>
              <div class="col-sm-2">
               <button class="btn"  type="button" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
@@ -27,7 +27,7 @@
             </div>
             <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordionExample">
               <div class="card-body">
-                <p><span style="font-weight: 400;">يعتمد جهاز Kenzii على
+                <p><span style="font-weight: 400;">يعتمد جهاز LaSoft PRO على
                     تقنية ال IPL ( وميض ضوئي مكثف) , وهي تقنية حديثة
                 </span><span style="font-weight: 400;">&nbsp;لإزالة
                     الشعر بشكل دائم و بدون ألم أو مخاطر. عندما تستعملين
@@ -54,7 +54,7 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
                 <p><span style="font-weight: 400;">واحدة من المميزات
-                    المتعددة لجهاز Kenzii مقارنة بباقي الطرق هي أنه غير
+                    المتعددة لجهاز LaSoft PRO مقارنة بباقي الطرق هي أنه غير
                     مؤلم أبدا عند الاستعمال. اغلب زبوناتنا وصفن لنا أنهن
                     يشعرن فقط بقليل من الحرارة على البشرة الموجه لها
                     الوميض.</span></p>
@@ -79,7 +79,7 @@
             </div>
             <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
               <div class="card-body">
-                <p><span style="font-weight: 400;">جهاز Kenzii هو بكل تأكيد
+                <p><span style="font-weight: 400;">جهاز LaSoft PRO هو بكل تأكيد
                     جهاز لنتائج تدوم طويلا مع العلم انه لا يوجد طريقة
                     ازالة شعر الى الأبد حتى في العيادات, الرجاء الحذر من
                     الشركات التي تدعي أن لديها طريقة تدوم إلى الأبد .
@@ -184,7 +184,7 @@
             </div>
             <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
               <div class="card-body">
-                <p><span style="font-weight: 400;">عمر الجهازهو 500,000
+                <p><span style="font-weight: 400;">عمر الجهازهو 1000000
                     ومضة.أي حسب عدد مرات الاستعمال المنصوح بها يدوم ل 10
                     سنين.</span></p>
               </div>
@@ -296,7 +296,7 @@
             <div class="card-header"  style="background-color:#f5eaec" id="heading12">
               <div class="row">
                 <div class="col-sm-10">
-              <h6 class="mb-0" ><span class=""> هل Kenzii آمن
+              <h6 class="mb-0" ><span class=""> هل LaSoft PRO آمن
                 للإستعمال ؟ </span></h6>
                </div>
              <div class="col-sm-2">
@@ -358,7 +358,7 @@
             <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
               <div class="card-body">
                 <p><span style="font-weight: 400;">لا, لا ينصح بإستعمال جهاز
-                    Kenzii فوق النموش او الخالات و حتى الوشوم</span>
+                    LaSoft PRO فوق النموش او الخالات و حتى الوشوم</span>
                 </p>
               </div>
             </div>

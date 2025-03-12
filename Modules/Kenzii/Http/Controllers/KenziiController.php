@@ -32,13 +32,13 @@ class KenziiController extends Controller
     {
         /* VisitorLogHelper::StoreVisitor($request, 1); */
 
-        $page_title = 'Kenzii | homepage';
+        $page_title = 'LaSoft Pro Algeria - لاسوفت برو الجزائر';
         return view('kenzii::index', compact('page_title'))->with('fb_pixel', $this->fbPixel($request->store));;
     }
 
     public function checking(Request $request)
     {
-        $page_title = 'Kenzii | checking';
+        $page_title = 'LaSoft Pro - هل جهازي أصلي ؟';
         return view('kenzii::checking', compact('page_title'))->with('fb_pixel', $this->fbPixel($request->store));;
     }
 
@@ -50,7 +50,7 @@ class KenziiController extends Controller
         $visitor_id = VisitorLogHelper::StoreVisitor($request, $store_product);
         Session::put('visitor_id', $visitor_id);
 
-        $page_title = 'Kenzii | product';
+        $page_title = 'LaSoft Pro - قدم طلبك';
         return view('kenzii::product', compact('page_title'))->with('fb_pixel', $this->fbPixel($request->store));
     }
 
@@ -70,7 +70,7 @@ class KenziiController extends Controller
           } */
 
 
-        $page_title = 'Kenzii | checkout';
+        $page_title = 'LaSoft Pro - Checkout Page';
         return view('kenzii::checkout',
             compact('page_title', 'color', 'price_info', 'product'))
             ->with('fb_pixel', $this->fbPixel($request->store));;
@@ -152,7 +152,7 @@ class KenziiController extends Controller
 
                 SendToEcoManager::sendToEcoManager($order->name, $order->phone, $order->wilaya, $ref, $src, $price);*/
 
-        $page_title = 'Kenzii | Thank you';
+        $page_title = 'LaSoft Pro | Thank you';
 
         Session::forget('visitor_id');
 
@@ -172,7 +172,7 @@ class KenziiController extends Controller
     public function faq(Request $request)
     {
 
-        $page_title = 'Kenzii | FAQ';
+        $page_title = 'LaSoft Pro | الأسئلة الشائعة';
 
         return view('kenzii::faq', compact('page_title'))->with('fb_pixel', $this->fbPixel($request->store));
     }
@@ -184,12 +184,12 @@ class KenziiController extends Controller
      */
     public function most(Request $request)
     {
-        return view('kenzii::most')->with('page_title', 'Title here')->with('fb_pixel', $this->fbPixel($request->store));;
+        return view('kenzii::most')->with('page_title', 'تعليقات الزبائن عن لاسوفت')->with('fb_pixel', $this->fbPixel($request->store));;
     }
 
     public function rating(Request $request)
     {
-        return view('kenzii::rating')->with('page_title', 'Title here')->with('fb_pixel', $this->fbPixel($request->store));;
+        return view('kenzii::rating')->with('page_title', 'تعليقات الزبائن عن لاسوفت')->with('fb_pixel', $this->fbPixel($request->store));;
     }
 
     /**

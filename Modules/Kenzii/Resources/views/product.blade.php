@@ -8,17 +8,18 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2><span class="pink">كينـزي الأصلي</span> يزيل الشعر الزائد نهائيا و بدون ألم!</h2>
-            </div>
+        	            <h2><span class="pink">لاسوفت الأصلي</span> يزيل الشعر الزائد نهائيا و بدون ألم!</h2>
+
+        	</div>
         </div>
     </div>
     <div class="container-fluid iner">
     	<div class="container">
             <div class="row">
                 <div class="col-md-7">
-                	<div class="box-left">
-                    	<h3>جهاز الليزر <span class="pink">كينـزي الأصلي</span> لإزالة الشعر نهائيا</h3>
-                        <div class="row">
+                		<div class="box-left">
+                	                      <h3>جهاز الليزر <span class="pink">لاسوفت الأصلي</span> لإزالة الشعر نهائيا</h3>
+                	<div class="row">
                             <div class="col-md-5 d-block d-md-none">
                                 <div class="box-right">
                                     {{-- <img src="{{asset('kenzii_store/assets/images/pink.png')}}" class="img-fluid pink-image " alt="" /> --}}
@@ -76,13 +77,12 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2>تعليقات الزبائن عن <span class="pink">كينزي الأصلي</span></h2>
+            <h2>تعليقات الزبائن عن <span class="pink">لاسوفت الأصلي</span></h2>
             </div>
         </div>
         <div class="row">
         	<div class="col-md-4 col-sm-6">
             	<div class="boxes">
-                	<img src="{{asset('kenzii_store/assets/images/Calque 50 copie.png')}}" class="img-fluid" alt="" />
                 	<img src="{{asset('kenzii_store/assets/images/Calque 50 copie.png')}}" class="img-fluid" alt="" />
                 </div>
             </div>
@@ -111,7 +111,7 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-            	<h2>نتائج <span class="pink">كينزي الأصلي</span></h2>
+            	<h2>نتائج <span class="pink">لاسوفت برو الأصلي</span></h2>
             </div>
         </div>
         <div class="row">
@@ -141,17 +141,15 @@
 <section class="top-footer">
     <div class="container">
         <div class="row">
-        	<div class="col-md-8">
+        <div class="col-md-8">
             	<p>
                 	اذا كان لديك أي إستفسار أو تريدين التحدث <br /> مع إحدى أخصائياتنا يمكنك الاتصال بنا <br /> 
-                    على الهاتف: <a href="tel:0770146313" class="black">0770146313</a><br />
-                    على الواتس:  <a href="tel:0770686417" class="black">0770686417</a>
+                    على الهاتف: <a href="tel:0770867532" class="black">0770867532</a><br />
+                    على الواتس:  <a href="tel:0770345478" class="black">0770345478</a>
                 </p>
             </div>
             <div class="col-md-4 d-block d-md-none">
-            	<div class="images-box">
-                	<img src="{{asset('kenzii_store/assets/images/Calque 36-mobile.png')}}" class="img-fluid" alt="" />
-                </div>
+            
             </div>
         </div>
     </div>
