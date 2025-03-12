@@ -189,7 +189,7 @@ class KenziiController extends Controller
             //    'status_id' => 3,
             // 'shipping_channel_id' => 4,
             'full_name' => $order->name,
-            'phone' => $order->name,
+            'phone' => $order->phone,
             'order_date' => $order->created_at,
             'total_amount' => $total,
             'comments' => $order->comments,
