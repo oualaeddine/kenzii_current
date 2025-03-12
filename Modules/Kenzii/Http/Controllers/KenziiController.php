@@ -200,12 +200,28 @@ class KenziiController extends Controller
 
         // Start the asynchronous request
         $response = Http::post('https://app.kseltechnology.com/api/v1/webhook/orders', $data);
+        $statusCode = $response->status(); // HTTP status code
+        $responseData = $response->json(); // Get the response data as an array
+
+        // Log the response status and data
+        Log::info('Asynchronous request completed', [
+            'status' => $statusCode,
+            'response_data' => $responseData
+        ]);
+
+        // You can also check the status code to log different messages based on the result
+        if ($statusCode === 200) {
+            Log::info('Order successfully processed', $responseData);
+        } else {
+            Log::error('Order processing failed', $responseData);
+        }
+
 
         // Perform other tasks without waiting for the HTTP request to complete
         // For example, save data locally or process other things
 
         // Handle the response when the request is finished
-   /*     $response->then(function ($response) {
+    /*    $response->then(function ($response) {
             // Log the response data
             $statusCode = $response->status(); // HTTP status code
             $responseData = $response->json(); // Get the response data as an array
